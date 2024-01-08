@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEARCH CONSOLE -->
+    <meta name="google-site-verification" content="i1dGYg8jzuwEbwhbk-CHmzC7pJ5bmzP3GVUpv5jZ5GA" />
+
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- META TAGS -->
+
+    <!-- Primary Meta Tags -->
+    <title>Morley Dev | Web Design & Development Solutions</title>
+    <meta name="title" content="Morley Dev | Web Design & Development Solutions" />
+    <meta name="description" content="Specialising in personal blogs, business portfolios, and e-commerce websites." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Morley Dev | Web Design & Development Solutions" />
+    <meta property="og:description"
+        content="Specialising in personal blogs, business portfolios, and e-commerce websites." />
+    <meta property="og:image" content="img/meta-tag-img.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Morley Dev | Web Design & Development Solutions" />
+    <meta property="twitter:description"
+        content="Specialising in personal blogs, business portfolios, and e-commerce websites." />
+    <meta property="twitter:image" content="img/meta-tag-img.png" />
+
+
+    <title>Morley Dev | Web Design & Development Solutions</title>
+</head>
+
+
+<!-------------------------------------------------------------------------------------- -->
+
+
+<body>
+    <!-- HEADER/NAVBAR -->
+    <header
+        class="bg-foreground shadow-bottom w-full flex flex-col lg:flex-row lg:p-4 fixed top-0 z-50 lg:justify-between">
+        <div class="flex flex-row justify-between items-center p-2">
+            <div class="w-32">
+                <a href="index.html">
+                    <img src="./img/logo.webp" alt="Logo">
+                </a>
+            </div>
+            <!-- CONTACT BUTTON -->
+            <div class="w-36 flex-center lg:hidden">
+                <a href="#contact" class="btn-primary gradient-text">
+                    <button class="">BUILD WITH ME</button>
+                </a>
+            </div>
+        </div>
+        <!-- NAVBAR -->
+        <div class="w-full flex justify-center">
+            <nav class="navbar flex relative">
+                <ul class="flex lg:min-w-[400px] lg:max-w-[400px] justify-around">
+                    <li class="nav-item"><a href="#services">SERVICES</a></li>
+                    <li class="nav-item"><a href="#projects">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#tech">TECH</a></li>
+                    <li class="nav-item"><a href="#about">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="w-44 flex-center">
+            <a href="#contact" class="btn-primary hidden lg:block gradient-text mr-2">
+                <button class="">BUILD WITH ME</button>
+            </a>
+        </div>
+    </header>
+
+    <main class="mt-20">
+
+        <!-- HERO SECTION -->
+        <section id="home">
+            <div id="my-background" class="relative">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <!-- CONTENT CONTAINER -->
+                <div class="h-20 md:h-40"></div>
+                <div class="flex mx-auto flex-col p-4 py-8 md:max-w-[800px] md:py-0 text-balanced md:text-center">
+                    <h1 class="text-4xl md:text-8xl font-black gradient-text leading-snug">WEB DESIGN & DEVELOPMENT
+                        SOLUTIONS</h1>
+                    <div class="h-10"></div>
+                    <h2 class="text-xl md:text-3xl text-gray-100 md:max-w-3xl">Specialising in personal blogs, business
+                        portfolios, and e-commerce websites.</h2>
+                </div>
+                <!-- PULSING HEADING -->
+                <h3 class="text-lg text-center text-gray-100 mt-8">
+                    <span class="animate-pulse">LEARN MORE</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-2 animate-bounce" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </h3>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <div id="services"></div>
+        <section>
+            <div class="bg-gradient-to-r from-green-300 via-teal-300 to-cyan-300 p-4">
+                <div class="space"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="md: max-w-[1100px] mx-auto">
+                    <div class="spacer"></div>
+                    <!-- TITLE -->
+                    <h2 class="text-background text-4xl font-bold text-center">SERVICES</h2>
+                    <!-- ICON -->
+                    <div class="flex justify-center my-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            stroke="#5c8984" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-tool">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <!-- SUBTITLE -->
+                    <h3 class="text-background text-2xl py-4 font-bold text-center uppercase">Cost-Effective, Quality
+                        Web
+                        Solutions</h3>
+                    <p class="max-w-3xl mx-auto" data-aos="fade-in" data-aos-duration="1000"
+                        data-aos-anchor-placement="center-bottom">
+                        I know how important it is to keep costs down, especially for small businesses and
+                        professionals. <span class="font-bold">That's why I create websites that are not just beautiful
+                            and functional but also really affordable. </span>Forget those expensive platforms;
+                        I'm here to help you get a fantastic website up and running without the hefty price tag.
+                        <br>
+                        <br>
+                        <span class="font-bold">With every plan I offer two free revisions</span> to make sure you're
+                        absolutely happy with the result. I also am happy to help with ongoing maintenance and updates
+                        to your website if desired.
+                    </p>
+                    <div class="spacer"></div>
+                    <!-- PLANS AND PRICING -->
+                    <h3 class="text-background text-2xl py-4 font-bold text-center">PLANS & PRICING</h3>
+
+                    <!-- CARD SPACER -->
+                    <div class="space-y-4 lg:space-y-0 flex flex-col items-center lg:flex-row lg:justify-around">
+
+                        <!-- CONTENT CONTAINER ($300) -->
+                        <div class="card" data-aos="fade-left" data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom">
+                            <div class="flex flex-row justify-start mt-2">
+                                <!-- LOGO -->
+                                <div class="inline-block mr-2">
+                                    <img width="44" height="44" src="https://img.icons8.com/nolan/64/tags.png"
+                                        alt="tags" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <h4 class="text-xl text-background uppercase">Single-Page Website</h4>
+                                    <h5 class="text-xl font-bold text-purple-950">FROM $300 AUD</h5>
+                                </div>
+                            </div>
+
+                            <!-- DESCRIPTION -->
+                            <p>
+                            <ul class="list-disc space-y-2 ml-4 mt-2">
+                                <li>Simple yet stunning online presence</li>
+                                <li>Perfect for getting your business or personal brand online without breaking the bank
+                                </li>
+                                <li>Sleek, modern design showcasing what you do best</li>
+                            </ul>
+                            </p>
+                        </div>
+
+                        <!-- CONTENT CONTAINER ($500) -->
+                        <div class="card" data-aos="fade-left" data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom">
+                            <div class="flex flex-row justify-start mt-2">
+                                <!-- LOGO -->
+                                <div class="inline-block mr-2">
+                                    <img width="54" height="54" src="https://img.icons8.com/nolan/64/tags.png"
+                                        alt="tags" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <h4 class="text-xl text-background uppercase">Multi-Page Website</h4>
+                                    <h5 class="text-xl font-bold text-purple-950">FROM $500 AUD</h5>
+                                </div>
+                            </div>
+
+                            <!-- DESCRIPTION -->
+                            <p>
+                            <ul class="list-disc space-y-2 ml-4 mt-2">
+                                <li>More space to tell your story</li>
+                                <li>Share detailed services, a portfolio, or more about your team</li>
+                                <li>User-friendly, attractive site that covers all your needs</li>
+                            </ul>
+                            </p>
+                        </div>
+
+                        <!-- CONTENT CONTAINER ($800) -->
+                        <div class="card" data-aos="fade-left" data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom">
+                            <div class="flex flex-row justify-start mt-2">
+                                <!-- LOGO -->
+                                <div class="inline-block mr-2">
+                                    <img width="64" height="64" src="https://img.icons8.com/nolan/64/tags.png"
+                                        alt="tags" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <h4 class="text-xl text-background uppercase">E-Commerce Website</h4>
+                                    <h5 class="text-xl font-bold text-purple-950">FROM $800 AUD</h5>
+                                </div>
+                            </div>
+
+                            <!-- DESCRIPTION -->
+                            <p>
+                            <ul class="list-disc space-y-2 ml-4 mt-2">
+                                <li>A multi-page website with all the e-commerce bells and whistles</li>
+                                <li>Smooth, secure shopping experience for your customers</li>
+                                <li>Conversion rate optimisation</li>
+                                <li>Built in WooCommerce or Shopify </li>
+                            </ul>
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+                <div class="spacer"></div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <div id="projects"></div>
+        <section>
+            <div class="bg-background">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="md: max-w-[1000px] mx-auto">
+                    <!-- TITLE -->
+                    <h2 class="text-text text-4xl font-bold text-center mt-8">PROJECTS</h2>
+                    <!-- ICON -->
+                    <div class="flex justify-center mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            stroke="#5c8984" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-pen-tool">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                            <path d="M2 2l7.586 7.586"></path>
+                            <circle cx="11" cy="11" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="spacer"></div>
+                    <!-- PROJECT SLIDER -->
+                    <div data-aos="fade-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                        <div class="swiper-container relative bg-black bg-opacity-30 p-4 pb-0">
+                            <div class="swiper-wrapper">
+                                <!-- SLIDE (EMBEDDED) -->
+                                <div class=" swiper-slide flex items-center">
+                                    <a href="https://embeddedconstruct.com/">
+                                        <p class=" text-gray-100 font-bold text-2xl pb-1">Embedded
+                                            Construct
+                                            <br>
+                                            <span class="font-light text-lg">Carpentry Experts</span>
+                                        </p>
+
+                                        <img src="img/mockups/embedded-mockup-portrait.webp"
+                                            alt="embedded-mockup-portrait" width="250px"
+                                            class="float-right rounded-lg mt-4 pr-12" />
+                                    </a>
+                                </div>
+                                <!-- SLIDE (AUSWILD) -->
+                                <div class="swiper-slide flex items-center">
+                                    <a href="https://auswildadventures.com/">
+                                        <p class=" text-gray-100 font-bold text-2xl pb-2">Aus Wild
+                                            Adventures <br>
+                                            <span class="font-light text-lg">Fishing Charters</span>
+                                        </p>
+
+                                        <img src="img/mockups/auswild-mockup-portrait.webp"
+                                            alt="auswild-mockup-portrait" width="250px"
+                                            class="float-right rounded-lg mt-4 pr-12" />
+                                    </a>
+                                </div>
+                                <!-- SLIDER (KELSCARE) -->
+                                <div class="swiper-slide flex items-center">
+                                    <a href="https://kelscare.com/">
+                                        <p class=" text-gray-100 font-bold text-2xl pb-2">Kelsey
+                                            Morley<br>
+                                            <span class="font-light text-lg">Dedicated Social Worker </span>
+                                            <div class="hidden md:inline-block lg:hidden h-8"></div>
+                                        </p>
+
+                                        <img src="img/mockups/kelscare-mockup-portrait.webp"
+                                            alt="kelscare-mockup-portrait" width="250px"
+                                            class="float-right rounded-lg mt-4 pr-12" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- SLIDER CONTROLS -->
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1/2"></div>
+                            <div class="swiper-button-prev absolute top-1/2 left-0 transform -translate-y-1/2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH SECTION -->
+        <div id="tech"></div>
+        <section>
+            <div class="bg-gradient-to-r from-green-300 via-teal-300 to-cyan-300 p-4">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="md: max-w-[1000px] mx-auto">
+                    <!-- TITLE -->
+                    <h2 class="text-background text-4xl font-bold text-center">TECH</h2>
+                    <!-- ICON -->
+                    <div class="flex justify-center my-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            stroke="#5c8984" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-settings">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p data-aos="fade-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                        I use the following tools in our initial design, development and testing stages to ensure the
+                        delivery of a functional, user-friendly and well-crafted website that you absolutely love.
+                    </p>
+                    <div class="spacer"></div>
+                    <!-- SUBTITLE -->
+                    <h3 class="text-background text-2xl py-4 font-bold text-center">DESIGN TOOLS</h3>
+
+
+                    <!-- CARD SPACER -->
+                    <div class="space-y-4 md:space-y-0 md:flex md:justify-around md:max-w-[750px] md:mx-auto">
+
+                        <!-- CONTENT CONTAINER (WIRE FRAMING) -->
+                        <div class="card-2 p-4" data-aos="fade-left" data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom">
+                            <div class="flex flex-row my-2">
+                                <!-- LOGO -->
+                                <div class="w-8 mr-2 inline-block">
+                                    <img class="rounded-lg" src="./img/logos/balsamiq-logo.webp" alt="balsamiq logo">
+                                </div>
+                                <h4 class="text-xl text-background">WIRE FRAMING</h4>
+                            </div>
+                            <!-- DESCRIPTION -->
+                            <p>
+                                I use apps such as Balsamiq to quickly sketch up layouts for your proposed website
+                                to
+                                give a
+                                basic idea of how it will look and function before development.
+                            </p>
+
+                        </div>
+
+                        <!-- CONTENT CONTAINER (PROTOTYPING) -->
+
+                        <div class="card-2 p-4" data-aos="fade-left" data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom">
+                            <div class="flex flex-row my-2">
+                                <!-- LOGO -->
+                                <div class="w-8 mr-2 inline-block">
+                                    <img class="rounded-lg" src="./img/logos/figma-logo.webp" alt="Figma logo">
+                                </div>
+                                <h4 class="text-xl text-background">PROTOTYPING</h4>
+                            </div>
+                            <!-- DESCRIPTION -->
+                            <p>
+                                If desired I can also give the design a more polished look using apps such as Figma
+                                to
+                                create a
+                                prototype of the website before fully developing it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+
+                <!-- DEVELOPMENT TOOLS -->
+                <h3 class="text-background text-2xl py-4 font-bold text-center">DEVELOPMENT TOOLS</h3>
+
+                <!-- CARD SPACER -->
+                <div class="space-y-4 md:space-y-0 md:flex md:justify-around md:max-w-[750px] md:mx-auto">
+
+                    <!-- CONTENT CONTAINER (CUSTOM CODING) -->
+                    <div class="card-2 p-4" data-aos="fade-left" data-aos-duration="1000"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="flex flex-row my-2">
+                            <!-- LOGO -->
+                            <div class="w-8 mr-2 inline-block">
+                                <img class="rounded-lg" src="./img/logos/coding-logo.webp"
+                                    alt="HTML, CSS, Javascript logo">
+                            </div>
+                            <h4 class="text-xl text-background">CUSTOM CODING</h4>
+                        </div>
+                        <!-- DESCRIPTION -->
+                        <p>
+                            I can create websites from scratch using HTML, CSS, and JavaScript to ensure they
+                            are
+                            lightweight and efficient. This also allows for more flexibility and keeps the cost
+                            down.
+                        </p>
+                    </div>
+
+                    <!-- CONTENT CONTAINER (WORDPRESS) -->
+                    <div class="card-2 p-4" data-aos="fade-left" data-aos-duration="1000"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="flex flex-row my-2">
+                            <!-- LOGO -->
+                            <div class="w-8 mr-2 bg-white rounded-lg inline-block">
+                                <img class="rounded-lg" src="./img/logos/wordpress.webp" alt="Wordpress logo">
+                            </div>
+                            <h4 class="text-xl text-background">WORDPRESS</h4>
+                        </div>
+                        <!-- DESCRIPTION -->
+                        <p>
+                            I can also create websites using WordPress. This allows you to
+                            easily update the content of your website yourself if desired. It is also a great way to
+                            integrate e-commerce functionality.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+
+                <!-- TESTING TOOLS -->
+                <h3 class="text-background text-2xl py-4 font-bold text-center">TESTING TOOLS</h3>
+
+                <!-- CARD SPACER -->
+                <div class="space-y-4 md:space-y-0 md:flex md:justify-around md:max-w-[750px] md:mx-auto">
+
+                    <!-- CONTENT CONTAINER (RESPONSIVENESS) -->
+                    <div class="card-2 p-4" data-aos="fade-left" data-aos-duration="1000"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="flex flex-row my-2">
+                            <!-- LOGO -->
+                            <div class="w-8 mr-2 inline-block">
+                                <img class="rounded-lg" src="./img/logos/chrome-dev-logo.webp"
+                                    alt="Logo of Chrome Dev Tools">
+                            </div>
+                            <h4 class="text-xl text-background">RESPONSIVENESS</h4>
+                        </div>
+                        <!-- DESCRIPTION -->
+                        <p>
+                            Using the Chrome Developer Tools I can test the responsiveness of your website
+                            across
+                            all
+                            devices. This ensures that your website will look great on all screen sizes.
+                        </p>
+                    </div>
+
+                    <!-- CONTENT CONTAINER (SPEED OPTIMISATION) -->
+                    <div class="card-2 p-4" data-aos="fade-left" data-aos-duration="1000"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="flex flex-row my-2">
+                            <!-- LOGO -->
+                            <div class="w-8 mr-2 bg-white rounded-lg inline-block">
+                                <img src="./img/logos/lighthouse-logo.webp" alt="Logo of Chrome Lighthouse">
+                            </div>
+                            <h4 class="text-xl text-background">SPEED OPTIMISATION</h4>
+                        </div>
+                        <!-- DESCRIPTION -->
+                        <p>
+                            Using tools such as Lighthouse gives an overview of how the website performs in
+                            terms of speed and accessibility. Techniques are then used to improve these metrics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <div id="about"></div>
+        <section>
+            <div class="bg-background pt-4">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="md: max-w-[1000px] mx-auto">
+                    <!-- TITLE -->
+                    <h2 class="text-text text-4xl font-bold text-center">ABOUT</h2>
+                    <!-- ICON -->
+                    <div class="flex justify-center mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            stroke="#5c8984" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-info">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                    </div>
+                    <!-- CONTENT CONTAINER -->
+                    <div class="flex flex-col items-center justify-center m-4 p-4 bg-foreground gradient-border"
+                        data-aos="flip-left" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+                        <!-- ANIMATION DIV -->
+                        <div class="flex flex-col items-center justify-center space-y-4 p-4" data-aos="zoom-in"
+                            data-aos-delay="1000" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+                            <!-- FACE IMAGE-->
+                            <div class="w-32 h-32 mt-8">
+                                <img src="./img/face.webp" alt="face" class="rounded-full">
+                            </div>
+                            <!-- NAME -->
+                            <h3 class="text-2xl text-gray-100 bg-primary">G'day I'm Jake</h3>
+                            <!-- DESCRIPTION -->
+                            <p class="text-gray-100 md:p-4">I am a web designer and developer starting out in Brisbane,
+                                keen to
+                                explore the web industry. <span class="text-text font-bold">My
+                                    approach is to offer competitive pricing to my clients, ensuring they
+                                    receive a quality website without a hefty cost.
+                                </span><br><br>
+
+                                I'm interested in working with a variety of clients, including small businesses and
+                                individual
+                                creatives. My goal is to provide you with a website that is both aesthetically pleasing
+                                and
+                                functional across all devices. Let's work together to create an online presence that
+                                effectively
+                                represents your vision.</p>
+                        </div>
+                    </div>
+                    <div id="contact"></div>
+                    <div class="spacer"></div>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="bg-black bg-opacity-30 pt-4">
+                <div class=" spacer"></div>
+                <div class="md:max-w-[800px] mx-auto">
+                    <h3 class="text-2xl py-4 font-bold text-center text-gray-100">
+                        GET IN TOUCH
+                    </h3>
+                    <p class="text-gray-100 p-4 md:max-w-[700px] mx-auto">
+                        Message me anytime to get started on your website dreams, whether you're building from scratch
+                        or need expert care for your existing site.</p>
+                    <form name="contact" netlify class="space-y-8 font-poppins md:w-1/2 md:mx-auto p-8">
+                        <div>
+                            <label for="email" class="block mb-2 font-medium text-gray-200">Email</label>
+                            <input type="email " name="email" id="email"
+                                class="shadow-sm border rounded-none border-gray-100 bg-background text-gray-100 text-sm focus:outline-none focus:ring-text focus:border-text block w-full p-3"
+                                required>
+                        </div>
+                        <div>
+                            <label for="name" class="block mb-2 font-medium text-gray-200">Name</label>
+                            <input type="text" name="name" id="name"
+                                class="shadow-sm border border-gray-100 rounded-none bg-background text-gray-100 text-sm focus:outline-none focus:ring-text focus:border-text block w-full p-3"
+                                required>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message" class="block mb-2 font-medium text-gray-200">Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                class="p-2.5 shadow-sm rounded-none border border-gray-100 bg-background text-gray-100 text-sm focus:outline-none focus:ring-text focus:border-text block w-full"></textarea>
+                        </div>
+                        <button type="submit" class="btn-form w-full">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black bg-opacity-30 flex text-gray-100 p-8 flex-col text-center">
+        <div class="text-xs">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> Morley Dev. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <!-- ------------------------------------------------------------------------------------ -->
+
+    <!-- SCRIPTS -->
+
+    <!-- VANTA BACKGROUND -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script>
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (isChrome) {
+            VANTA.NET({
+                el: "#my-background",
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 0.50,
+                scaleMobile: 1.00,
+                color: 0x3fffe8,
+                backgroundColor: 0x2d3332,
+                static: true,
+            })
+        } else {
+            VANTA.NET({
+                el: "#my-background",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x3fffe8,
+                backgroundColor: 0x2d3332,
+            })
+        }
+    </script>
+
+    <!-- NAVBAR-->
+    <script>
+        // Get all sections and nav items
+        const sections = Array.from(document.querySelectorAll('section'));
+        const navItems = Array.from(document.querySelectorAll('.nav-item'));
+
+        // Function to remove 'active' class from all nav items
+        function removeActiveClass() {
+            navItems.forEach((navItem) => {
+                navItem.classList.remove('active');
+            });
+        }
+
+        // Add click event listeners to the nav items
+        navItems.forEach((navItem, index) => {
+            navItem.addEventListener('click', () => {
+                // Remove 'active' class from all nav items
+                removeActiveClass();
+
+                // Add 'active' class to the clicked nav item
+                navItem.classList.add('active');
+
+                // Remove 'active' class from the clicked nav item after 1 second
+                setTimeout(() => {
+                    navItem.classList.remove('active');
+                }, 1000);
+            });
+        });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
+    <!-- SWIPER JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            // Default parameters
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <!-- SCROLLING -->
+    <script>
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 1000);
+        });
+    </script>
+
+    <!-- FORM ZOOM -->
+    <script>
+        document.querySelector('form').addEventListener('touchstart', function (event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+    </script>
+
+</body>
+
+</html>

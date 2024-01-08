@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background tracking-wider;
+  font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-text;
+}
+
+p {
+  @apply text-lg;
+  @apply font-light;
+}
+
+.spacer {
+  @apply h-8;
+}
+
+.shadow-bottom {
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary {
+  @apply text-text border-2 border-text text-center w-full py-1 hover:bg-text hover:text-background hover:scale-95 transition-all duration-300 ease-in-out;
+}
+
+.btn-form {
+  @apply text-text border-2 border-text text-center w-full py-2 hover:bg-text hover:text-background hover:scale-95 transition-all duration-300 ease-in-out;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+#my-background {
+  height: 100vh;
+}
+
+.card {
+  max-width: 100%;
+  overflow: hidden;
+  @apply shadow-xl p-4 bg-white/40 min-h-[320px] max-h-[320px] md:min-w-[350px] md:max-w-[350px];
+}
+
+.card-2 {
+  max-width: 100%;
+  overflow: hidden;
+  @apply shadow-xl p-4 bg-white/40 min-h-[280px] max-h-[280px] md:min-w-[300px] md:max-w-[300px] md:min-h-[300px] md:max-h-[300px];
+}
+
+.feather {
+  max-width: 100%;
+}
+
+.gradient-border {
+  border: 2px solid;
+  padding: 10px;
+  border-image-source: linear-gradient(45deg, aquamarine, cyan);
+  border-image-slice: 1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.nav-item {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar a {
+  text-decoration: none;
+  @apply text-gray-100;
+  font-weight: bold;
+}
+
+.nav-item.active a {
+  @apply bg-primary/50;
+  transition: width 0.3s ease-in-out;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  right: 10px;
+  padding: 30px;
+  color: #14d9c2 !important;
+  fill: #14d9c2 !important;
+  stroke: #14d9c2 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #14d9c2 !important;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-green-300 via-teal-300 to-cyan-300;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
