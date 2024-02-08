@@ -23,6 +23,10 @@ h6 {
   @apply text-text;
 }
 
+h4 {
+  @apply font-semibold;
+}
+
 p {
   @apply text-lg;
   @apply font-light;
@@ -57,13 +61,13 @@ p {
 .card {
   max-width: 100%;
   overflow: hidden;
-  @apply shadow-xl p-4 bg-white/40 min-h-[320px] max-h-[320px] md:min-w-[350px] md:max-w-[350px];
+  @apply shadow-xl p-4 bg-white/40 min-h-[320px] max-h-[320px] md:min-w-[350px] md:max-w-[350px] rounded-2xl;
 }
 
 .card-2 {
   max-width: 100%;
   overflow: hidden;
-  @apply shadow-xl p-4 bg-white/40 min-h-[280px] max-h-[280px] md:min-w-[300px] md:max-w-[300px] md:min-h-[300px] md:max-h-[300px];
+  @apply shadow-xl p-4 bg-white/40 min-h-[280px] max-h-[280px] md:min-w-[300px] md:max-w-[300px] md:min-h-[300px] md:max-h-[300px] rounded-2xl;
 }
 
 .feather {
