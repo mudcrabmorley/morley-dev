@@ -683,6 +683,10 @@ video {
   width: 11rem;
 }
 
+.w-7{
+  width: 1.75rem;
+}
+
 .w-8{
   width: 2rem;
 }
@@ -920,14 +924,9 @@ video {
   line-height: 2rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-lg{
@@ -1107,8 +1106,9 @@ p{
   justify-content: center;
 }
 
-#my-background {
-  height: 100vh;
+#my-background{
+  height: 1000px;
+  width: 100%;
 }
 
 .card {

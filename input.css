@@ -55,7 +55,7 @@ p {
 }
 
 #my-background {
-  height: 100vh;
+  @apply h-[1000px] w-full;
 }
 
 .card {
