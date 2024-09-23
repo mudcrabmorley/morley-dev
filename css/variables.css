@@ -1,0 +1,35 @@
+:root {
+  /* Color Styles */
+  --color-dark-blue: #1f1c3f;
+  --color-gray: #3c3d50;
+  --color-aqua: #14d9c2;
+  --color-dark-green: #2c403d;
+  --color-black: #0d0d0d;
+  --color-dark-gray: #211d25;
+  --color-light-green: #b3cbc8;
+  --color-light-light-green: #d2e0de;
+  --color-light-light-light-green: #f0f5f4;
+  --color-bg-green: #181d26;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1.2rem;
+  --font-size-lg: 1.4rem;
+  --font-size-xl-mob: 1.8rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 3rem;
+  --font-size-xxxl: 4rem;
+
+  /* Line Heights */
+  --line-height-sm: 1.2;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.75;
+  --line-height-xl: 2.2;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.03em;
+  --letter-spacing-widest: 0.05em;
+}
