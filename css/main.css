@@ -4,153 +4,221 @@
 /* VARIABLES */
 @import url("variables.css");
 
+/* CSS RESET */
+@import url("reset.css");
+
 /* COMPONENTS */
-@import url("components.css");
+.spacer {
+  height: 1rem;
+}
 
-/* CSS RESET ----------------------------------------------------------- */
+.spacer-lg {
+  height: 5rem;
+}
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
+.spacer-sm {
+  height: 0.5rem;
+}
+
+/* Build button */
+.build-button {
+  align-items: center;
+  background-color: var(--color-aqua);
+  border: 3px solid var(--color-dark-blue);
+  border-radius: 50px;
   box-sizing: border-box;
-}
-
-/* Prevent font size inflation */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin-block-end: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
-/* Set shorter line heights on headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-  line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
-}
-
-/* Make images easier to work with */
-img,
-picture {
+  color: var(--color-dark-blue);
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
   max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.build-button:after {
+  background-color: var(--color-black);
+  border-radius: 50px;
+  content: "";
   display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
+.build-button:hover:after {
+  transform: translate(0, 0);
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em;
+.build-button:active {
+  outline: 0;
 }
 
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex;
+.build-button:hover {
+  background: oklch(from var(--color-aqua) calc(l * 1.1) c h);
+  transition: background 0.3s ease;
+  outline: 0;
 }
 
-* {
-  margin: 0;
+@media (min-width: 768px) {
+  .build-button {
+    padding: 0 40px;
+  }
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  background: hsl(from var(--color-gray) h s l / 50%);
+  border-radius: 32px;
+}
+
+.card-content {
+  margin: 1rem;
+}
+
+.card-h3 {
+  font-size: var(--font-size-lg);
+  color: var(--color-light-light-green);
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-widest);
+}
+
+.card-p {
+  font-size: 14px;
+  line-height: var(--line-height-md);
+  color: var(--color-light-green);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.card-price {
+  background: linear-gradient(to bottom, #2c403d 0%, #211d25 100%);
+  overflow: hidden;
+  height: 150px;
+  border-radius: 32px 32px 0 0;
+  padding: 1rem;
+}
+
+.price-type {
+  font-size: var(--font-size-xl);
+  color: var(--color-light-light-green);
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-widest);
+}
+
+.price {
+  font-size: var(--font-size-xxl);
+  color: var(--color-aqua);
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-widest);
+}
+
+.from {
+  font-size: var(--font-size-lg);
+  color: var(--color-light-light-green);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-widest);
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.pricing-features {
+  list-style: none;
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-  font-family: "Mona_Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+.pricing-features li {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
 }
 
-p,
-li,
-figcaption {
-  text-wrap: pretty;
-  max-width: 65ch;
+.pricing-features li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--color-aqua);
+  font-weight: bold;
+  font-size: 44px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-header,
-footer,
-main,
-section,
-article {
-  container-type: inline-size;
+.pricing-features > li {
+  line-height: var(--line-height-md);
+  color: var(--color-light-light-green);
+  letter-spacing: var(--letter-spacing-wide);
 }
 
-img:not([alt]) {
-  border: 5px solid red;
+.projects.card {
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Remove default styling of form inputs */
-input,
-textarea {
-  all: unset;
-  background-color: inherit;
-  box-sizing: border-box;
+.projects.card:hover {
+  transform: scale(1.05);
 }
 
-/* Prevent autofill from changing styling */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: var(--color-light-green);
-  transition: background-color 5000s ease-in-out 0s;
-  box-shadow: inset 0 0 20px 20px #23232329;
-}
+/* Card media queries */
+@media (max-width: 375px) {
+  .card {
+    width: 300px;
+    height: 380px;
+    border-radius: 24px;
+  }
 
-/* ----------------------------------------------------------------------- */
+  .price-section.card {
+    height: 320px;
+  }
+
+  .projects.card {
+    height: 360px;
+  }
+
+  .card-price {
+    background: linear-gradient(to bottom, #2c403d 0%, #211d25 100%);
+    overflow: hidden;
+    height: 120px;
+    border-radius: 24px 24px 0 0;
+    padding: 0 1rem;
+  }
+
+  .price-type {
+    font-size: var(--font-size-lg);
+  }
+
+  .price {
+    font-size: var(--font-size-xl);
+  }
+
+  .from {
+    font-size: var(--font-size-md);
+    color: var(--color-light-light-green);
+  }
+
+  .pricing-features li {
+    font-size: var(--font-size-sm);
+    padding-left: 40px;
+  }
+
+  .pricing-features li::before {
+    font-size: 32px;
+  }
+}
 
 body {
   background-color: var(--color-bg-green);
@@ -164,7 +232,7 @@ body {
   background-repeat: no-repeat;
   height: 700px;
   position: relative;
-  height: 100dvh;
+  height: 50rem;
 }
 
 .hero::before {
@@ -195,28 +263,11 @@ body {
   line-height: var(--line-height-lg);
 }
 
-@media (max-width: 768px) {
-  .hero-h1 {
-    font-size: var(--font-size-xl);
-  }
-
-  .hero-h2 {
-    font-size: var(--font-size-md);
-  }
-}
-
 .hero-logo {
   max-width: 200px;
   position: absolute;
   top: 2%;
   left: 2%;
-}
-
-@media (max-width: 768px) {
-  .hero-logo {
-    max-width: 100%;
-    padding: 0 3rem;
-  }
 }
 
 .hero-content {
@@ -227,6 +278,17 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero::before {
+    background-attachment: scroll;
+  }
+
+  .hero-logo {
+    position: relative;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 0 3rem;
+  }
+
   .hero-content {
     position: fixed;
     top: 25%;
@@ -256,33 +318,22 @@ body {
   text-transform: uppercase;
   color: var(--color-light-light-light-green);
   margin-top: 3rem;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
   .section-h2 {
     margin-top: 0;
-    font-size: var(--font-size-xl-mob);
     line-height: var(--line-height-sm);
-  }
-}
-
-.gradient-border {
-  /*
-  border-bottom: 10px solid;
-  border-image: linear-gradient(to right, #2c403d, #375a55) 1; */
-  margin-bottom: 50px;
-}
-
-@media (max-width: 768px) {
-  .gradient-border {
-    margin: 0.8rem;
   }
 }
 
 .section-content {
   margin: 0 auto;
 }
+
+/* PROJECTS */
 
 .card-grid {
   display: grid;
@@ -318,8 +369,10 @@ body {
   margin-right: 4px;
 }
 
+/* ABOUT */
+
 .quote-section {
-  height: 60dvh;
+  height: 25rem;
   background-color: rgba(0, 0, 0, 0.3);
   max-width: 100%;
 }
@@ -330,16 +383,11 @@ body {
   font-size: var(--font-size-xxl);
   line-height: var(--line-height-lg);
   margin: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .quote {
-    font-size: var(--font-size-xl);
-    margin: 0.5rem;
-  }
-}
-
-.about-grid {
+.two-col-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -348,33 +396,33 @@ body {
 }
 
 @media (max-width: 768px) {
-  .about-grid {
+  .two-col-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.about-grid-left,
-.about-grid-right {
+.two-col-grid-left,
+.two-col-grid-right {
   padding: 20px;
 }
 
 @media (max-width: 768px) {
-  .about-grid-left,
-  .about-grid-right {
+  .two-col-grid-left,
+  .two-col-grid-right {
     padding: 0px;
   }
 }
 
-.about-grid-left {
+.two-col-grid-left {
   padding-right: 0;
 }
 
-.about-grid-right {
+.two-col-grid-right {
   font-size: var(--font-size-md);
 }
 
 @media (max-width: 768px) {
-  .about-grid-right {
+  .two-col-grid-right {
     padding: 0;
   }
 }
@@ -470,9 +518,10 @@ body {
   color: var(--color-light-green);
 }
 
+/* CONTACT */
+
 .contact-form {
   padding: 2rem;
-  background-color: var();
   background: hsl(from var(--color-gray) h s l / 50%);
   border-radius: 32px;
   display: flex;
@@ -480,13 +529,6 @@ body {
   height: 650px;
   max-width: 480px;
   font-size: var(--font-size-md);
-}
-
-@media (max-width: 768px) {
-  .contact-form {
-    padding: 1.3rem 0.8rem;
-    border-radius: 24px;
-  }
 }
 
 .contact-form h3 {
@@ -505,6 +547,14 @@ body {
   margin-bottom: 30px;
 }
 
+/* Form media queries */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 28px;
+    border-radius: 24px;
+  }
+}
+
 label {
   margin-bottom: 10px;
   font-weight: 500;
@@ -520,6 +570,8 @@ textarea {
   box-sizing: border-box;
   font-size: 16px;
 }
+
+/* FOOTER */
 
 footer {
   color: var(--color-gray);

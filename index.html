@@ -3,20 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Morley Dev | Modern web design & development solutions</title>
+    <title>Morley Dev | Modern Web Design & Development Solutions</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+  
+  <!-- META INFO -->
+  <meta name="description" content="Offering modern, affordable, and user-friendly web design and development solutions for small businesses. Let’s create a website that speaks for your brand and engages your customers.">
+  <meta name="keywords" content="web design, web development, affordable websites, modern websites, user-friendly websites, small business solutions, website design, responsive web design">
+  <meta name="author" content="Morley Dev">
+
+  <!-- OPEN GRAPH TAGS -->
+  <meta property="og:title" content="MODERN WEB DESIGN & DEVELOPMENT SOLUTIONS">
+  <meta property="og:description" content="Creating modern, affordable, and user-friendly websites for small businesses.">
+  <meta property="og:image" content="./images/morley-dev-social-share.png">
+  <meta property="og:url" content="https://morleywebdev.com/">
+  <meta property="og:type" content="website">
+  
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MODERN WEB DESIGN & DEVELOPMENT SOLUTIONS">
+  <meta name="twitter:description" content="Creating modern, affordable, and user-friendly websites for small businesses.">
+  <meta name="twitter:image" content="./images/morley-dev-social-share.png">
+
+  <!-- LANGUAGE -->
+  <meta http-equiv="Content-Language" content="en-AU">
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://morleywebdev.com/">
+
+  <!-- ROBOTS -->
+  <meta name="robots" content="index, follow"> 
   </head>
 
   <body>
-
     <!-- HERO SECTION -->
     <section class="hero">
       <div class="hero-logo">
         <img src="./images/morley-logo-trans.webp" alt="Morley Dev logo" />
       </div>
       <div class="hero-content">
+        <div class="spacer"></div>
         <!-- Heading -->
         <h1 class="hero-h1">MODERN WEB DESIGN & DEVELOPMENT SOLUTIONS</h1>
         <div class="spacer"></div>
@@ -27,7 +63,7 @@
         </h2>
         <div class="spacer"></div>
         <!-- Button -->
-        <button class="build-button" role="button">Build with me</button>
+       <a href="#contact"><button class="build-button" role="button">Build with me</button></a>
       </div>
     </section>
 
@@ -36,9 +72,7 @@
       <div class="section">
         <div class="spacer-lg"></div>
         <!-- Heading -->
-        <div class="gradient-border">
           <h2 class="section-h2">What's on Offer</h2>
-        </div>
         <!-- Container -->
         <div class="section-content">
           <!-- Cards container -->
@@ -104,15 +138,13 @@
     <section>
       <div class="section">
         <!-- Heading -->
-        <div class="gradient-border">
           <h2 class="section-h2">Pricing</h2>
-        </div>
         <!-- Container -->
         <div class="section-content">
           <!-- Cards container -->
           <div class="card-grid">
             <!-- Card 1 -->
-            <div class="card">
+            <div class="price-section card">
               <!-- Pricing container -->
               <div class="card-price">
                 <!-- Heading -->
@@ -137,7 +169,7 @@
               </div>
             </div>
             <!-- Card 2 -->
-            <div class="card">
+            <div class="price-section card">
               <!-- Pricing container -->
               <div class="card-price">
                 <!-- Heading -->
@@ -162,7 +194,7 @@
               </div>
             </div>
             <!-- Card 3 -->
-            <div class="card">
+            <div class="price-section card">
               <!-- Pricing container -->
               <div class="card-price">
                 <!-- Heading -->
@@ -196,15 +228,14 @@
     <section>
       <div class="section">
         <!-- Heading -->
-        <div class="gradient-border">
           <h2 class="section-h2">Recent Projects</h2>
-        </div>
         <!-- Container -->
         <div class="section-content">
           <!-- Cards container -->
           <div class="card-grid">
             <!-- Card 1 -->
-            <div class="card">
+             <a href="https://ausmuaythai.com.au/" target="_blank" rel="noopener noreferrer">
+            <div class="projects card">
               <!-- Gradient -->
               <img src="./images/logos/amt-logo.webp" alt="aus muay thai logo" />
               <!-- Container -->
@@ -213,7 +244,6 @@
                 <h3 class="card-h3">Aus MuayThai</h3>
                 <div class="spacer-sm"></div>
                 <p class="card-p">Showcasing Australian Muay Thai</p>
-                <div class="spacer-sm"></div>
                 <div class="tags-list">
                   <div class="tag">CMS</div>
                   <div class="tag">Blog</div>
@@ -221,8 +251,10 @@
                 </div>
               </div>
             </div>
+          </a>
             <!-- Card 2 -->
-            <div class="card">
+             <a href="https://jsquaredconstructions.com/" target="_blank" rel="noopener noreferrer">
+            <div class="projects card">
               <!-- Gradient -->
               <img
                 src="./images/logos/j-squared-logo.webp"
@@ -234,15 +266,16 @@
                 <h3 class="card-h3">J Squared Constructions</h3>
                 <div class="spacer-sm"></div>
                 <p class="card-p">High quality carpentry services</p>
-                <div class="spacer-sm"></div>
                 <div class="tags-list">
                   <div class="tag">CMS</div>
                   <div class="tag">Figma</div>
                 </div>
               </div>
             </div>
+          </a>
             <!-- Card 3 -->
-            <div class="card">
+             <a href="https://www.ntgfightandfitness.com/" target="_blank" rel="noopener noreferrer">
+            <div class="projects card">
               <!-- Gradient -->
               <img
                 src="./images/logos/ntg-logo.webp"
@@ -254,13 +287,13 @@
                 <h3 class="card-h3">NTG Fight & Fitness</h3>
                 <div class="spacer-sm"></div>
                 <p class="card-p">Performance training centre</p>
-                <div class="spacer-sm"></div>
                 <div class="tags-list">
                   <div class="tag">Custom code</div>
                   <div class="tag">Site upgrade</div>
                 </div>
               </div>
             </div>
+          </a>
           </div>
         </div>
         <div class="spacer-lg"></div>
@@ -270,16 +303,16 @@
     <!-- ABOUT QUOTE -->
     <section class="section quote-section">
       <h2 class="quote">
-        “My passion is creating websites and user experiences that provide a
-        sense of satisfaction.”
+        “ My passion is creating websites and user experiences that provide a
+        sense of satisfaction. ”
       </h2>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="section">
       <!-- About grid -->
-      <div class="about-grid">
-        <div class="about-grid-left">
+      <div class="two-col-grid">
+        <div class="two-col-grid-left">
           <div class="profile">
             <img
               src="./images/face.crop.webp"
@@ -292,7 +325,7 @@
             </div>
           </div>
         </div>
-        <div class="about-grid-right">
+        <div class="two-col-grid-right">
           <div class="spacer-lg hidden-mob"></div>
           <p>
             I'm passionate about crafting websites that leave users saying "wow, that was easy." My goal is to help small businesses create online experiences that are both enjoyable and effective. User experience is crucial, but it's just one piece of the puzzle. Other key aspects i focus on include: 
@@ -356,12 +389,9 @@ class="about-list">
    <section class="section">
     <div class="spacer-lg"></div>
             <!-- Heading -->
-             <div class="gradient-border">
-              <h2 class="section-h2">Build With Me</h2>
-            </div>
-    <div class="about-grid">
-      <div class="about-grid-left">
-<!-- Left content -->
+              <h2 class="section-h2" id="contact">Build With Me</h2>
+    <div class="two-col-grid">
+      <div class="two-col-grid-left">
  <!-- Form -->
  <form action="https://formspree.io/f/mjvqgjgq" method="post" class="contact-form">
   <h3>Please fill in your details below</h3>
@@ -385,8 +415,8 @@ class="about-list">
   <button type="submit" class="build-button">Submit</button>
  </form>
       </div>
-      <div class="about-grid-right">
-   <!-- Right content -->
+      <div class="two-col-grid-right">
+   <!-- Contact graphic -->
     <img src="./images/contact-graphic.png" alt="graphic of people talking with profile page in background">
       </div>
     </div>
@@ -394,6 +424,7 @@ class="about-list">
 
    <!-- FOOTER -->
    <footer class="footer">
+    <!-- Copyright -->
     <p>&copy; <span id="year"></span> Morley Dev. All rights reserved.</p>
   </footer>
 
