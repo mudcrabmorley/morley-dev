@@ -7,12 +7,30 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css">
+
+
+    <!-- CDNS -->
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- LottieFiles -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+   <!-- GSAP -->
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- Anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#00aba9">
   
@@ -46,11 +64,22 @@
   </head>
 
   <body>
-    <!-- HERO SECTION -->
-    <section class="hero">
+
+    <!-- HEADER -->
+    <header>
       <div class="hero-logo">
         <img src="./images/morley-logo-trans.webp" alt="Morley Dev logo" />
       </div>
+      <div class="hero-button-container">
+        <a href="#contact"><button class="build-button header-button" role="button">Build with me</button></a>
+       </div>
+   </header>
+
+   <!-- MAIN -->
+   <main>
+
+    <!-- HERO SECTION 1 -->
+    <section class="hero">
       <div class="hero-content">
         <div class="spacer"></div>
         <!-- Heading -->
@@ -63,7 +92,9 @@
         </h2>
         <div class="spacer"></div>
         <!-- Button -->
-       <a href="#contact"><button class="build-button" role="button">Build with me</button></a>
+         <div class="hero-button-container">
+       <a href="#contact"><button class="build-button hero-button" role="button">Build with me</button></a>
+      </div>
       </div>
     </section>
 
@@ -71,16 +102,21 @@
     <section>
       <div class="section">
         <div class="spacer-lg"></div>
+        <!-- GSAP animation -->
+        <div class="animate-slide-up">
         <!-- Heading -->
           <h2 class="section-h2">What's on Offer</h2>
         <!-- Container -->
         <div class="section-content">
           <!-- Cards container -->
-          <div class="card-grid">
+          <div class="card-grid carousel">
             <!-- Card 1 -->
-            <div class="card">
+            <div class="offers card item">
               <!-- Gradient -->
-              <img src="./images/custom-coding.png" alt="" />
+              <div class="card-header offers">
+                <!-- Lottie animation -->
+                <div id="lottie-custom-code" class="lottie"></div>
+              </div>
               <!-- Container -->
               <div class="card-content">
                 <!-- Heading -->
@@ -95,9 +131,12 @@
               </div>
             </div>
             <!-- Card 2 -->
-            <div class="card">
+            <div class="offers card item">
               <!-- Gradient -->
-              <img src="./images/cms.png" alt="" />
+              <div class="card-header offers">
+                <!-- Lottie animation -->
+                <div id="lottie-cms" class="lottie"></div>
+              </div>
               <!-- Container -->
               <div class="card-content">
                 <!-- Heading -->
@@ -112,9 +151,12 @@
               </div>
             </div>
             <!-- Card 3 -->
-            <div class="card">
+            <div class="offers card item">
               <!-- Gradient -->
-              <img src="./images/maintain-upgrade.png" alt="" />
+              <div class="card-header offers">
+                <!-- Lottie animation -->
+                <div id="lottie-maintenance" class="lottie"></div>
+              </div>
               <!-- Container -->
               <div class="card-content">
                 <!-- Heading -->
@@ -130,6 +172,7 @@
             </div>
           </div>
         </div>
+      </div>
         <div class="spacer-lg"></div>
       </div>
     </section>
@@ -137,16 +180,18 @@
     <!-- PRICING SECTION -->
     <section>
       <div class="section">
+        <!-- GSAP animation -->
+        <div class="animate-slide-up">
         <!-- Heading -->
           <h2 class="section-h2">Pricing</h2>
         <!-- Container -->
         <div class="section-content">
           <!-- Cards container -->
-          <div class="card-grid">
+          <div class="card-grid carousel">
             <!-- Card 1 -->
-            <div class="price-section card">
+            <div class="price-section card item">
               <!-- Pricing container -->
-              <div class="card-price">
+              <div class="card-header">
                 <!-- Heading -->
                 <div class="spacer"></div>
                 <div class="spacer-sm"></div>
@@ -160,18 +205,17 @@
                 <div class="spacer-sm"></div>
                 <ul class="pricing-features">
                   <li>Digital business card</li>
-                  <li>Ensures that your message is delivered succinctly</li>
                   <li>
-                    Perfect for visitors to quickly grasp who you are and what
-                    you offer
+                    Ensures that your message is delivered succinctly
                   </li>
+                  <li>Perfect for visitors to quickly grasp who you are and what you offer</li>
                 </ul>
               </div>
             </div>
             <!-- Card 2 -->
-            <div class="price-section card">
+            <div class="price-section card item">
               <!-- Pricing container -->
-              <div class="card-price">
+              <div class="card-header">
                 <!-- Heading -->
                 <div class="spacer"></div>
                 <div class="spacer-sm"></div>
@@ -194,9 +238,9 @@
               </div>
             </div>
             <!-- Card 3 -->
-            <div class="price-section card">
+            <div class="price-section card item">
               <!-- Pricing container -->
-              <div class="card-price">
+              <div class="card-header">
                 <!-- Heading -->
                 <div class="spacer"></div>
                 <div class="spacer-sm"></div>
@@ -220,6 +264,7 @@
             </div>
           </div>
         </div>
+        </div>
         <div class="spacer-lg"></div>
       </div>
     </section>
@@ -227,16 +272,21 @@
     <!-- PROJECTS SECTION -->
     <section>
       <div class="section">
+                <!-- GSAP animation -->
+                <div class="animate-slide-up">
+
         <!-- Heading -->
           <h2 class="section-h2">Recent Projects</h2>
+
         <!-- Container -->
         <div class="section-content">
+
           <!-- Cards container -->
-          <div class="card-grid">
+          <div class="card-grid carousel">
+
             <!-- Card 1 -->
-             <a href="https://ausmuaythai.com.au/" target="_blank" rel="noopener noreferrer">
-            <div class="projects card">
-              <!-- Gradient -->
+            <div class="projects card item show-modal" data-modal="modal1">
+              <!-- Logo -->
               <img src="./images/logos/amt-logo.webp" alt="aus muay thai logo" />
               <!-- Container -->
               <div class="card-content">
@@ -251,11 +301,10 @@
                 </div>
               </div>
             </div>
-          </a>
+
             <!-- Card 2 -->
-             <a href="https://jsquaredconstructions.com/" target="_blank" rel="noopener noreferrer">
-            <div class="projects card">
-              <!-- Gradient -->
+            <div class="projects card item show-modal" data-modal="modal2">
+              <!-- Logo -->
               <img
                 src="./images/logos/j-squared-logo.webp"
                 alt="j squared constructions logo"
@@ -272,13 +321,12 @@
                 </div>
               </div>
             </div>
-          </a>
+
             <!-- Card 3 -->
-             <a href="https://www.ntgfightandfitness.com/" target="_blank" rel="noopener noreferrer">
-            <div class="projects card">
-              <!-- Gradient -->
+            <div class="projects card item show-modal" data-modal="modal3">
+              <!-- Logo -->
               <img
-                src="./images/logos/ntg-logo.webp"
+                src="./images/logos/ntg-logo.png"
                 alt="ntg fight & fitness logo"
               />
               <!-- Container -->
@@ -293,26 +341,28 @@
                 </div>
               </div>
             </div>
-          </a>
+
           </div>
+        </div>
         </div>
         <div class="spacer-lg"></div>
       </div>
     </section>
 
-    <!-- ABOUT QUOTE -->
+    <!-- QUOTE -->
     <section class="section quote-section">
-      <h2 class="quote">
-        “ My passion is creating websites and user experiences that provide a
-        sense of satisfaction. ”
-      </h2>
+      <div class="quote animate-slide-up">
+        <span class="text-wrapper">
+          <h3 class="letters">My passion is creating websites and user experiences that provide a sense of satisfaction.</h3>
+        </span>
+      </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="section">
       <!-- About grid -->
       <div class="two-col-grid">
-        <div class="two-col-grid-left">
+        <div class="about two-col-grid-left animate-slide-up">
           <div class="profile">
             <img
               src="./images/face.crop.webp"
@@ -325,12 +375,12 @@
             </div>
           </div>
         </div>
-        <div class="two-col-grid-right">
+        <div class="two-col-grid-right animate-slide-up">
           <div class="spacer-lg hidden-mob"></div>
-          <p>
+          <p class="about-details">
             I'm passionate about crafting websites that leave users saying "wow, that was easy." My goal is to help small businesses create online experiences that are both enjoyable and effective. User experience is crucial, but it's just one piece of the puzzle. Other key aspects i focus on include: 
 <ul
-class="about-list">
+class="about-list about-details">
   <li>User Experience (UX)</li>
   <li>Design</li>
   <li>Performance</li>
@@ -347,7 +397,7 @@ class="about-list">
       <!-- Heading -->
     <div class="commitments-grid">
       <!-- Commit 1 -->
-    <div class="commit">
+    <div class="commit commit-1">
       <div class="spacer"></div>
       <!-- Icon -->
       <img src="./images/icons/money-icon.svg" alt="money icon">
@@ -359,7 +409,7 @@ class="about-list">
       <p>My aim is to give you a good deal while still providing a high quality site.</p>
     </div>
       <!-- Commit 2 -->
-    <div class="commit">
+    <div class="commit commit-2">
       <div class="spacer"></div>
       <!-- Icon -->
       <img src="./images/icons/comms-icon.svg" alt="comms icon">
@@ -371,7 +421,7 @@ class="about-list">
       <p>I aim to keep you informed at all times, providing peace of mind while ensuring a quality product.</p>
     </div>
       <!-- Commit 3 -->
-    <div class="commit">
+    <div class="commit commit-3">
       <div class="spacer"></div>
       <!-- Icon -->
       <img src="./images/icons/clock-icon.svg" alt="clock icon">
@@ -391,7 +441,7 @@ class="about-list">
             <!-- Heading -->
               <h2 class="section-h2" id="contact">Build With Me</h2>
     <div class="two-col-grid">
-      <div class="two-col-grid-left">
+      <div class="contact two-col-grid-left">
  <!-- Form -->
  <form action="https://formspree.io/f/mjvqgjgq" method="post" class="contact-form">
   <h3>Please fill in your details below</h3>
@@ -415,20 +465,231 @@ class="about-list">
   <button type="submit" class="build-button">Submit</button>
  </form>
       </div>
-      <div class="two-col-grid-right">
+      <div class="two-col-grid-right contact">
    <!-- Contact graphic -->
-    <img src="./images/contact-graphic.png" alt="graphic of people talking with profile page in background">
+                <!-- Lottie animation -->
+                <div id="lottie-contact" class="lottie contact"></div>
       </div>
     </div>
    </section>
 
+  </main>
+
    <!-- FOOTER -->
    <footer class="footer">
+    <!-- Social icons -->
+    <ul class="wrapper">
+      <li class="icon instagram">
+        <a href="https://www.instagram.com/morleydev/" target="_blank" rel="noopener noreferrer" aria-label="instagram profile"><span><i class="fab fa-instagram"></i></span></a>
+      </li>
+
+      <li class="icon linkedin">
+        <a href="https://www.linkedin.com/in/jake-morley-11b371134/" target="_blank" rel="noopener noreferrer" aria-label="linkedin profile">
+        <span><i class="fab fa-linkedin"></i></span>
+      </a>
+      </li>
+      <li class="icon github">
+        <a href="https://github.com/mudcrabmorley" target="_blank" rel="noopener noreferrer" aria-label="github profile">
+        <span><i class="fab fa-github"></i></span>
+      </a>
+      </li>
+    </ul>
+      <div class="spacer"></div>
     <!-- Copyright -->
     <p>&copy; <span id="year"></span> Morley Dev. All rights reserved.</p>
   </footer>
 
+
+  <!-- MODALS -->
+
+   <!-- Modal 1 -->
+  <div class="modal hidden" id="modal1">
+    <div class="modal-header">
+      <img src="./images/logos/amt-logo.webp" alt="AMT logo">
+      <a href="https://ausmuaythai.com.au/" target="_blank" rel="noopener noreferrer">
+        <button class="site secondary-button">Visit Site</button>
+      </a>
+    </div>
+    <button class="close-modal">&times;</button>
+    <br>
+    <div class="modal-content">
+    <h3>Aus MuayThai</h3>
+    <br>
+
+    <div class="section">
+        <h4>Client Background</h4>
+        <p>
+          <em>Aus MuayThai</em> is a news and events company dedicated to promoting Muay Thai across Australia. With a strong social media following, they approached me to help expand their brand by developing a website to provide their audience with the latest information.
+        </p>
+        <br>
+    </div>
+
+    <div class="section">
+        <h4>Pain Points</h4>
+        <p>
+          Although the company had success sharing content on social media, they wanted to offer more in-depth coverage. They also needed a platform to host a voting system for their annual Muay Thai awards, allowing users to cast votes in each category.
+        </p>
+        <br>
+    </div>
+
+    <div class="section">
+        <h4>Solution</h4>
+        <p>
+          We built the website using WordPress with the Kadence page builder, complemented by plugins to post events and display news articles. Additional plugins were installed to monitor and optimise SEO, and to embed YouTube feeds showcasing popular fight replays. A custom-coded Jotform voting system was also integrated and styled to match the website’s theme.
+        </p>
+        <br>
+    </div>
+
+    <div class="section">
+        <h4>Result</h4>
+        <p>
+          The website now receives around 300 monthly visitors, providing up-to-date news and information to Muay Thai fans across Australia. The annual voting system received over 1,500 votes and will be used for future awards. The site's functionality and design continue to evolve with iterative improvements.
+        </p>
+        <br>
+    </div>
+
+    <div class="section">
+        <h4>Key Technologies Used</h4>
+        <ul>
+          <li>WordPress</li>
+          <li>Kadence theme and block editor</li>
+          <li>Custom CSS</li>
+          <li>Jotform</li>
+          <li>Google Site Kit & SEO Framework</li>
+        </ul>
+        <br>
+    </div>
+  </div>
+
+  </div>
+
+     <!-- Modal 2 -->
+     <div class="modal hidden" id="modal2">
+      <div class="modal-header">
+        <img src="./images/logos/j-squared-logo.webp" alt="J Squared Constructions logo">
+        <a href="https://jsquaredconstructions.com/" target="_blank" rel="noopener noreferrer">
+          <button class="site secondary-button">Visit Site</button>
+        </a>
+      </div>
+      <button class="close-modal">&times;</button>
+      <br>
+      <div class="modal-content">
+      <h3>J Squared Constructions</h3>
+      <br>
+  
+      <div class="section">
+          <h4>Client Background</h4>
+          <p>
+            <em>J Squared Constructions</em> is an expert carpentry company based on the Gold Coast. As their business expanded, they approached me to develop a website to enhance their branding and online presence.
+          </p>
+          <br>
+      </div>
+  
+      <div class="section">
+          <h4>Pain Points</h4>
+          <p>
+            Although the client had some content ideas and a rough vision for their brand, they were uncertain about how to fully develop it and provide customers with a clear understanding of their services and values. They also wanted to connect their brand to the digital world but were unsure about the necessary technology.
+          </p>
+          <br>
+      </div>
+  
+      <div class="section">
+          <h4>Solution</h4>
+          <p>
+            We started by designing the site’s landing page in Figma, creating custom icons to represent services and selecting images to showcase recent construction projects. Once the design was approved, the website was built using WordPress with the Spectra page builder, along with custom CSS and JavaScript for additional styling and animation. The site was optimised for fast loading times, and a Google Workspace account was set up to integrate a custom domain and email, as per the client’s request.
+          </p>
+          <br>
+      </div>
+  
+      <div class="section">
+          <h4>Result</h4>
+          <p>
+            The client now has a strong online presence to promote their business and secure contracts, supported by an informative and user-friendly website. The use of WordPress allows for easy updates and future marketing enhancements if J Squared chooses to focus more on SEO and lead generation.
+          </p>
+          <br>
+      </div>
+  
+      <div class="section">
+          <h4>Key Technologies Used</h4>
+          <ul>
+            <li>Figma</li>
+            <li>WordPress</li>
+            <li>Spectra page builder</li>
+            <li>Custom CSS & JavaScript</li>
+            <li>Google Workspace</li>
+          </ul>
+          <br>
+      </div>
+    </div>
+  
+    </div>
+
+       <!-- Modal 3 -->
+       <div class="modal hidden" id="modal3">
+        <div class="modal-header">
+          <img src="./images/logos/ntg-logo.png" alt="NTG Fight & Fitness logo">
+          <a href="https://www.ntgfightandfitness.com/" target="_blank" rel="noopener noreferrer">
+            <button class="site secondary-button">Visit Site</button>
+          </a>
+        </div>
+        <button class="close-modal">&times;</button>
+        <br>
+        <div class="modal-content">
+        <h3>NTG Fight & Fitness</h3>
+        <br>
+    
+        <div class="section">
+            <h4>Client Background</h4>
+            <p>
+              <em>NTG Fight & Fitness</em> is one of the most popular MMA gyms in Southern Brisbane. They approached me to modernise their website and find a more cost-effective hosting solution than their current setup.
+            </p>
+            <br>
+        </div>
+    
+        <div class="section">
+            <h4>Pain Points</h4>
+            <p>
+              The existing website was not responsive across different device screen sizes and lacked a cohesive style guide. They also wanted to integrate their Shopify store for selling fight gear to members.
+            </p>
+            <br>
+        </div>
+    
+        <div class="section">
+            <h4>Solution</h4>
+            <p>
+              We rebuilt the website using custom code with the Tailwind CSS framework. This allowed for consistent styling and efficient adaptation to different screen sizes. In addition to a custom contact form and Shopify store integration, custom icons were designed to visually represent the various fighting classes offered on the welcome page.
+            </p>
+            <br>
+        </div>
+    
+        <div class="section">
+            <h4>Result</h4>
+            <p>
+              The new website offers improved accessibility and has modernised the brand’s online presence. The site now attracts daily visitors and continues to generate over 35 monthly enquiries via form submissions, contributing to the growth of the gym’s community. Custom coding the site has also significantly reduced hosting costs while ensuring the site remains lightweight and fast.
+            </p>
+            <br>
+        </div>
+    
+        <div class="section">
+            <h4>Key Technologies Used</h4>
+            <ul>
+              <li>Custom code (HTML, CSS)</li>
+              <li>Tailwind CSS</li>
+              <li>Shopify</li>
+              <li>DALL·E 3 AI</li>
+              <li>GitHub</li>
+            </ul>
+            <br>
+        </div>
+      </div>
+    
+      </div>
+
+  <div class="overlay hidden"></div>
+
   <!-- SCRIPTS -->
+
+  <!-- Main.js -->
    <script src="./main.js"></script>
   </body>
 </html>
