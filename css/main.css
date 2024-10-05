@@ -12,7 +12,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 /* COMPONENTS */
@@ -339,6 +339,11 @@ body {
   max-width: 800px;
 }
 
+.hero-button-container > .header-button {
+  padding: 1rem 0;
+  padding-right: 0;
+}
+
 @media (max-width: 768px) {
   .hero::before {
     background-attachment: scroll;
@@ -346,7 +351,7 @@ body {
 
   .hero-logo {
     position: relative;
-    max-width: 100px;
+    max-width: 120px;
     padding-left: 0;
   }
 
@@ -354,11 +359,6 @@ body {
     top: 25%;
     left: 5%;
     max-width: 98%;
-  }
-
-  .hero-button-container > .header-button {
-    padding: 0 1rem;
-    padding-right: 0;
   }
 
   .build-button {
