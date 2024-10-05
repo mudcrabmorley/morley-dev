@@ -7,6 +7,14 @@
 /* CSS RESET */
 @import url("reset.css");
 
+header {
+  background: hsl(from var(--color-bg-green) h s l / 96%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
 /* COMPONENTS */
 .spacer {
   height: 1rem;

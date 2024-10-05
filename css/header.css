@@ -102,13 +102,3 @@ header {
     --translate: -100%;
   }
 }
-
-/* end of relevant code */
-
-header {
-  background: hsl(from var(--color-bg-green) h s l / 96%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
