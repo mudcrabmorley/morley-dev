@@ -2,6 +2,7 @@
   /* Color Styles */
   --color-dark-blue: #1f1c3f;
   --color-gray: #3c3d50;
+  --color-gray-half: hsla(237, 14%, 27%, 0.5);
   --color-aqua: #14d9c2;
   --color-dark-green: #2c403d;
   --color-black: #0d0d0d;
