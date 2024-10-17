@@ -4,6 +4,20 @@ window.addEventListener("load", function () {
   document.getElementById("loading-screen").style.display = "none";
 });
 
+// Header background change
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY === 0) {
+    header.classList.add("transparent");
+    header.classList.remove("scrolled");
+  } else {
+    header.classList.remove("transparent");
+    header.classList.add("scrolled");
+  }
+});
+
 // * Auto-update copyright year
 document.getElementById("year").textContent = new Date().getFullYear();
 

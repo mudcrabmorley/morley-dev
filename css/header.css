@@ -60,6 +60,8 @@ body {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
   inset: 0 0 auto;
   will-change: transform;
@@ -101,4 +103,12 @@ header {
          */
     --translate: -100%;
   }
+}
+
+header.transparent {
+  background-color: transparent;
+}
+
+header.scrolled {
+  background-color: rgba(24, 29, 38, 0.95);
 }
