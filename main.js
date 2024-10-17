@@ -1,7 +1,7 @@
 // Hide loading screen when page is fully loaded
 window.addEventListener("load", function () {
   setTimeout(function () {});
-  // document.getElementById("loading-screen").style.display = "none";
+  document.getElementById("loading-screen").style.display = "none";
 });
 
 // * Auto-update copyright year
