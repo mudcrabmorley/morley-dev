@@ -139,13 +139,9 @@ const timelineCommit = gsap.timeline({
 });
 
 timelineCommit
-  .from(".commit-1", {})
-  .from(".commit-2", {
-    stagger: 0.2,
-  })
-  .from(".commit-3", {
-    stagger: 0.4,
-  });
+  .from(".commit-1", { rotation: 360 })
+  .from(".commit-2", { rotation: 360 })
+  .from(".commit-3", { rotation: 360, stagger: 0.4 });
 
 // Function to apply animation to a selector
 function animateText(selector) {

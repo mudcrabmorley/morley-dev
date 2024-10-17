@@ -368,6 +368,11 @@ body {
 
 /* CONTENT SECTIONS */
 
+.off-screen-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
+}
+
 @media (max-width: 768px) {
   .hidden-mob {
     display: none;
